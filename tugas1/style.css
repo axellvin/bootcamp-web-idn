@@ -1,0 +1,724 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+
+   CSS RESET
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CSS NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Chivo Mono', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 65px;
+    background: linear-gradient(to right,
+    #112D4E,
+    #ad5389);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 20px 60px;
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 7px;
+    z-index: 9999;
+    /* opacity: 0.5; */
+}
+
+nav > ul {
+    display: flex;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.nav-brand > h1 > a {
+    color: #F9F7F7;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+nav > ul > li > a {
+    margin-right: 5px;
+    display: block;
+    text-align: center;
+    width: 60px;
+    padding: 10px 5px 10px 5px;
+    transition: 0.5s;
+    color: #dbdbdb;
+}
+
+nav > ul > li > a:hover {
+    background-color: #3F72AF;
+    color: #F9F7F7;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 10px 6px, rgba(0, 0, 0, 0.09) 0px 15px 8px;
+}
+
+.contact {
+    margin-right: 40px;    
+}
+
+/* Main */
+/* Header */
+main {
+    color: #F9F7F7;
+}
+
+main > .profile {
+    background: linear-gradient(to right,
+      #3F72AF,
+      #ad5389);
+}
+
+.border {
+    height: 320px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.border1 {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 21% 79% 70% 30% / 19% 38% 62% 81% ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 7px;
+    background: linear-gradient(to right, rgba(60, 16, 83, 0.8), rgba(173, 83, 137, 0.8));
+}
+
+.border2 {
+    background: linear-gradient(to right,
+      rgba(173, 83, 137, 0.7),
+      rgba(60, 16, 83, 0.7));
+    width: 200px;
+    height: 200px;
+    border-radius: 79% 21% 33% 67% / 26% 20% 80% 74% ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.img-profile {
+    width: 170px;
+    margin-top: 80px;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 20, 20));
+}
+
+.intro {
+    margin-top: 15px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+}
+
+.profile > .intro > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.profile > .intro > h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.animated-bg {
+    margin-top: -75px;
+    transform: rotate(180deg);
+    filter: drop-shadow(0px -20px 10px rgb(150, 149, 149));
+}
+
+article {
+    margin-top: -10em;
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    color: #F9F7F7;
+    transition: 0.5s;
+}
+
+.card {
+    margin-top: 7em;
+    border-radius: 2px;
+    background: linear-gradient(to right,
+      #3F72AF,
+      #ad5389, #3F72AF);
+    width: 700px;
+    height: 500px;
+    box-shadow: rgb(51, 70, 90) 0px 20px 30px -10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card > h1 {
+    margin: 0.3em 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0px 3px 5px rgba(255,255,255,0.5);
+}
+
+.underline {
+    border-radius: 3px;
+    background: linear-gradient(to right,
+      #3F72AF,
+      #ad5389);
+    width: 100px;
+    height: 10px;
+    box-shadow: rgba(59, 59, 59, 0.35) 0px 0px 10px 3px;
+}
+
+.card > p {
+    text-align: justify;
+    margin: 2.8em 3em 1em 3em;
+    line-height: 1.5rem;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+.animated-bg-end {
+    margin-top: -6em;
+    filter: drop-shadow(0px -20px 10px rgb(150, 149, 149));
+}
+
+.contact-me {
+    background: linear-gradient(to right,
+      #ad5389,
+      #3F72AF);
+      margin-top: -5em;
+      position: relative;
+}
+
+.contact-me > form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-me > form > h1 {
+    margin-bottom: 0.3em;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-shadow: 0px 3px 5px rgba(255,255,255,0.5);
+}
+
+.contact-me > form > ul {
+    width: 500px;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+.contact-me > form > ul > li {
+    display: flex;
+    flex-direction: column;
+    margin: 0.8em 0;   
+}
+
+.contact-me > form > ul > li > label {
+    margin: 0.5em 0;
+    text-shadow: 0px 2px 2px rgba(255,255,255,0.5);
+}
+
+.contact-me > form > ul > li > input {
+    background: linear-gradient(to right,
+    #ad5389,
+    #3F72AF);
+    border-radius: 3px;
+    border: none;
+    height: 35px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    color: #F9F7F7;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 10px;
+}
+
+.contact-me > form > ul > li > textarea {
+    background: linear-gradient(to right,
+    #ad5389,
+    #3F72AF);
+    border-radius: 3px;
+    border: none;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    color: #F9F7F7;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 10px;
+    padding-top: 3px;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+    outline: 1px solid #dbdbdb;
+}
+
+::placeholder {
+    color: #F9F7F7;
+    opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: #F9F7F7;
+}
+
+.btn {
+    align-items: center;
+}
+
+.contact-me > form > ul > li > button {
+    background-color: #3F72AF;
+    border-radius: 3px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 7px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+    color: #dbdbdb;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100px;
+    height: 40px;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+    transition: 0.7s;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.contact-me > form > ul > li > button:hover {
+    background-color: #112D4E;
+    color: #F9F7F7;
+    box-shadow: rgb(23, 23, 24) 0px 3px 7px 0px;
+}
+
+footer {
+    position: relative;
+    z-index: 30;
+    background: linear-gradient(to right,
+      #ad5389,
+      #3F72AF);
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -7px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > h1 {
+    font-size: 1rem;
+    font-weight: 800;
+    text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+    .animated-bg {
+        margin-top: -60px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    .animated-bg {
+        margin-top: -40px;
+    }
+
+    article {
+        margin-top: -7.7em;
+    }
+
+    .contact-me {
+          margin-top: -3.5em;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+    .border {
+        height: 280px;
+    }
+    
+    .border1 {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .border2 {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .img-profile {
+        width: 150px;
+    }
+
+    .profile > .intro > h1 {
+        font-size: 25px;
+    }
+    
+    .profile > .intro > h3 {
+        font-size: 16px;
+    }    
+
+    .animated-bg {
+        margin-top: -10px;
+        filter: drop-shadow(0px -10px 5px rgb(150, 149, 149));
+    }
+
+    article {
+        margin-top: -5em;
+        height: 800px;
+    }
+
+    .card {
+        width: 550px;
+        height: 600px;
+    }
+
+    .contact-me {
+          margin-top: -2em;
+    }
+}     
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* NAVBAR */
+    nav {
+        padding: 0;
+        height: 110px;
+    }
+    .nav-brand {
+        display: none;
+    }
+    nav > ul {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    nav > ul > li  {
+        width: 100%;
+        border-bottom: 1px solid #3F72AF;
+    }
+    nav > ul > li > a {
+        width: 100%;
+    }
+    .contact {
+        margin: 0;
+    }
+
+    /* HEADER */
+    .border {
+        height: 310px;
+    }
+    
+    .border1 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .border2 {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .img-profile {
+        width: 150px;
+        margin-top: 95px;
+    }
+
+    .intro {
+        margin-top: 15px;
+        height: 80px;
+    }
+    
+    .profile > .intro > h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+    
+    .profile > .intro > h3 {
+        font-size: 1rem;
+    }    
+
+    .animated-bg {
+        margin-top: -10px;
+        filter: drop-shadow(0px -10px 5px rgb(150, 149, 149));
+    }
+
+    article {
+        margin-top: -7em;
+        height: 800px;
+    }
+
+    .card {
+        width: 90%;
+        height: 500px;
+        margin-top: 8em;
+        /* border: 2px solid red; */
+    }
+
+    .card > h1 {
+        font-size: 1.6rem;
+    }
+
+    .card > p {
+        font-size: 0.75rem;
+        line-height: 1.2rem;
+    }
+
+    .animated-bg-end {
+        margin-top: -8em;
+    }
+
+    .contact-me {
+          margin-top: -2.5em;
+    }
+
+    .contact-me > form > h1 {
+        margin-bottom: 0.3em;
+        font-size: 2rem;
+        text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+    }
+
+    .contact-me > form > ul {
+        width: 80%;
+        font-size: 1em;
+    }
+
+    .contact-me > form > ul > li > input {
+        height: 30px;
+    }
+
+    .contact-me > form > ul > li > textarea {
+        height: 110px;
+    }
+
+    .contact-me > form > ul > li > button {
+        margin-top: 0.3em;
+        width: 80px;
+        height: 35px;
+        text-shadow: 0px 1px 1px rgba(255,255,255,0.5);
+        transition: 0.7s;
+        cursor: pointer;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        height: 450px;
+    }
+
+    .card {
+        margin-top: 10em;
+    }
+
+    .card > h1 {
+        margin-top: 0.5em;
+        font-size: 1.4rem;
+    }
+
+    .underline {
+        display: none;
+    }
+
+    .card > p {
+        font-size: 0.75rem;
+        margin: 1.2em 1.5em 1em 1.5em;
+    }
+
+    .animated-bg-end {
+        margin-top: -9em;
+    }
+
+    .contact-me {
+            margin-top: -1em;
+    }
+
+    .contact-me > form > h1 {
+        margin-bottom: 0.2em;
+        font-size: 1.3rem;
+    }
+
+    .contact-me > form > ul {
+        font-size: 0.8rem;
+        
+    }
+
+    .contact-me > form > ul > li > input {
+        height: 30px;
+        font-size: 0.9rem;
+    }
+
+    .contact-me > form > ul > li > textarea {
+        height: 90px;
+        font-size: 0.8rem;
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+    article {
+        height: 900px;
+    }
+    .card {
+        margin-top: 9em;
+        height: 490px;
+    }
+
+    .card > h1 {
+        /* margin-top: 1.4em; */
+        font-size: 1rem;
+    }
+
+    .card > p {
+        font-size: 0.6rem;
+        line-height: 1rem;
+        letter-spacing: 0px;
+        font-weight: 100;
+        margin: 0.8em 1.2em 0.7em 1.2em;
+    }
+
+    footer > h1 {
+        font-size: 0.7rem;
+    }
+    
+}
+
+@media only screen and (max-width: 240px) {
+    .card {
+        margin-top: 9em;
+        height: 700px;
+    }
+
+    .animated-bg-end {
+        margin-top: 0em;
+    }
+    .contact-me > form > h1 {
+        margin-top: 5px;
+        font-size: 0.75rem;
+    }
+
+    .contact-me > form > ul {
+        font-size: 0.5rem;  
+    }
+    .contact-me > form > ul > li > button {
+        width: 80%;
+        height: 20px;
+        font-size: 70%;
+    }
+    footer > h1 {
+        font-size: 0.4rem;
+    }
+}
+
+@media only screen and (max-width: 144px) {
+    nav {
+        height: 85px;
+    }
+
+    nav > ul > li > a {
+        font-size: 8px;
+    }
+    .border {
+        height: 200px;
+    }
+    
+    .border1 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .border2 {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .img-profile {
+        width: 50px;
+        margin-top: 40px;
+    }
+
+    .profile > .intro > h1 {
+        font-size: 8px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .profile > .intro > h3 {
+        font-size: 6px;
+    }    
+
+    article {
+        font-size: 8px;
+    }
+
+    .card {
+        overflow: hidden;
+    }
+    .card > h1 {
+        font-size: 0.5rem;
+    }
+    
+    .card > p {
+        line-height: 0.7rem;
+    }
+
+}
