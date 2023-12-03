@@ -1,0 +1,196 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Variabel */
+:root {
+    --dark-color: #212529;
+    --white-color: white;
+    --grey-color: #6c757d;
+    --blue-color: #0d6efd;
+
+    font-size: 16px;
+    --h2-font-size: 32px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea.form-control  {
+    resize: none;
+}
+/* input {border:0;outline:0;} */
+input:focus.form-control, textarea:focus.form-control {
+    box-shadow: none;
+}
+
+/* Global CSS */
+section:not(.header-section) {
+    padding: 70px 0;
+}
+
+section .section-title {
+    font-size: var(--h2-font-size);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Navbar Style */
+.navbar .nav-item .nav-link {
+    transition: .7s;
+}
+
+.navbar .nav-item .nav-link:hover {
+    color: var(--blue-color);
+}
+
+.navbar .nav-item .nav-link[tabindex]:focus {
+    border-bottom: 3px solid var(--blue-color);
+}
+
+.nav-item .nav-link {
+    color: var(--grey-color);
+    border-bottom: 3px solid var(--white-color);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+/* Navbar Style */
+
+/* Header */
+.header-section {
+    background: rgb(13,110,253);
+    background: linear-gradient(90deg, rgba(13,110,253,1) 75%, rgba(255,255,255,1) 25%);
+    box-shadow: 0 0 20px  black;
+}
+
+.header-section .row {
+    height: 95vh;
+}
+
+.header-section .header-title{
+    font-size: 2.2rem;
+}
+
+.bg {
+    background-color: gray;
+    box-shadow: 0 0 20px  black;
+    background: radial-gradient(circle at center, #929292, #464545);
+    /* background: radial-gradient(circle at center, #85b6fe, #0d6efd); */
+}
+
+#typing-text {
+    display: inline-block;
+    border-right: 2px solid #000;
+    padding-right: 6px;
+    animation: cursor;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: step-start;
+}
+  
+@keyframes cursor {
+    0% {
+        border-color: var(--dark-color);
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+.header-section .header-img {
+    /* margin-bottom: 50px; */
+    /* background-image: url("img/img-prof.png"); */
+    width: 30vw;
+    /* height: 600px; */
+    filter: drop-shadow(0 0 5px rgba(17, 17, 17, 0.8));
+    /* border: 5px solid black; */
+    
+}
+
+div.flip {
+    transition: 0.3s ease-in;
+}
+
+div.flip:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 3px rgb(195, 192, 192));
+  }
+
+
+/* Footer */
+footer {
+    box-shadow: 0 0 10px 0 black;
+}
+/* Footer */
+
+
+/* Mobile Phones (portrait) */
+@media only screen and (max-width: 767px) {
+    /* Styles for mobile phones (portrait) */
+
+    .header-section {
+        background: var(--blue-color);
+    }
+    .bg {
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .header-section .header-img {
+        width: 50vw;
+        /* align-items: end; */
+    }
+
+    .intro {
+        order: 2;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
+  
+/* Mobile Phones (landscape) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* Styles for mobile phones (landscape) */
+    .header-section .header-title, .header-section .header-title .nama {
+        font-size: 1.9rem;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for tablets */
+    .header-section .header-title, .header-section .header-title .nama{
+        font-size: 2.6rem;
+    }
+}
+
+/* Laptops and Desktops */
+@media only screen and (min-width: 1200px) {
+    /* Styles for laptops and desktops */
+    .header-section .header-title, .header-section .header-title .nama{
+        font-size: 3.2rem;
+    }
+}
+
+  /* Large Desktops and TVs */
+@media only screen and (min-width: 1600px) {
+    /* Styles for large desktops and TVs */
+    .header-section .header-title, .header-section .header-title .nama{
+        font-size: 4.2rem;
+    }
+}
